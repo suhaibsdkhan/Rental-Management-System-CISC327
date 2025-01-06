@@ -1,0 +1,33 @@
+body {
+    background-color: cadetblue;
+}  
+
+.input-menu {
+  width: 80%;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  max-width: 500px;
+}
+
+input {
+  display: block; 
+  width: 100%;    
+  margin-bottom: 10px; 
+  background-color: #f0f0f0;
+}
+
+.add-button {
+  display: flex;                  
+  justify-content: space-between; 
+  align-items: center;           
+  width: 101.5%;                    
+  padding: 5px;                 
+  border: 1px solid #ccc;         
+  background-color: #f0f0f0;
+}
+
+.left {
+  margin-right: auto; 
+}

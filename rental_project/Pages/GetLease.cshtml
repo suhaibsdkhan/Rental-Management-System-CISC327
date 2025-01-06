@@ -1,0 +1,22 @@
+@page "/get-lease"
+@model rental_project.Pages.auth.GetLease
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Lease</title>
+    <!-- Include jsPDF library for generating pdfs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+
+    <h2>Get a lease</h2>
+    <label for="addressInput">Address</label>
+    <input type="text" id="addressInput" name="addressInput" placeholder="Address" required />
+    
+    <button id="Retrieve">Retrieve</button>
+</body>
+<script src="~/js/GetLease.js" type="module"></script>
+</html>

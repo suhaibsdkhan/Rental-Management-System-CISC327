@@ -1,0 +1,43 @@
+@page "/rent-payment/{paymentId}"
+@model rental_project.Pages.RentPayment
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Rent Payment</title>
+    <link rel="stylesheet" href="~/css/RentPayment.css"/>
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        <h1>Rent Payment</h1>
+        <div class="payment-form">
+            <div class="form-field">
+                <label>Address:</label>
+                <input type="text" value="@Model.RentPaymentModel.LeaseAgreement.Address" readonly>
+            </div>
+            <div class="form-field">
+                <label>Rent Period:</label>
+                <input type="text" value="@($"{Model.RentPaymentModel.LeaseAgreement.LeaseStart:dd/MM/yyyy} - {Model.RentPaymentModel.LeaseAgreement.LeaseEnd:dd/MM/yyyy}")" readonly>
+            </div>
+            <div class="form-field">
+                <label>Amount:</label>
+                <input type="text" value=@($"{Model.RentPaymentModel.LeaseAgreement.RentAmount}") readonly>
+            </div>
+            <div class="form-field">
+                <label>Payment Deadline:</label>
+                <input type="text" value=@($"{Model.RentPaymentModel.PaymentDeadline}") readonly>
+            </div>
+            <button class="payment-button">
+                <img src="~/card-icon.png" alt="Card Icon">
+                Debit or Credit Card
+            </button>
+            <div class="powered-by">
+                Powered by <img src="~/paypal-logo.png" alt="PayPal">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

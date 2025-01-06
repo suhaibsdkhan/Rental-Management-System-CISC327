@@ -1,0 +1,45 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+
+        <IsPackable>false</IsPackable>
+        <IsTestProject>true</IsTestProject>
+        <RootNamespace>Tests</RootNamespace>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="coverlet.collector" Version="6.0.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="DotNetSeleniumExtras.WaitHelpers" Version="3.11.0" />
+        <PackageReference Include="FluentAssertions" Version="6.12.1" />
+        <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" Version="8.0.11" />
+        <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.11" />
+        <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.11.1" />
+        <PackageReference Include="Selenium.Support" Version="4.27.0" />
+        <PackageReference Include="Selenium.WebDriver" Version="4.27.0" />
+        <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="131.0.6778.8500" />
+        <PackageReference Include="xunit" Version="2.9.1" />
+        <PackageReference Include="xunit.runner.console" Version="2.9.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+        <PackageReference Include="xunit.runner.visualstudio" Version="2.8.2">
+          <PrivateAssets>all</PrivateAssets>
+          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+        </PackageReference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <Using Include="Xunit"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\rental_project\rental_project.csproj" />
+    </ItemGroup>
+
+</Project>

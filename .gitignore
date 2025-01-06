@@ -1,0 +1,12 @@
+bin/
+obj/
+/packages/
+publish
+riderModule.iml
+/_ReSharper.Caches/
+rental_project/bin
+rental_project/obj
+.idea
+/rental_project/wwwroot/css/styles.css
+/node_modules
+coverage/

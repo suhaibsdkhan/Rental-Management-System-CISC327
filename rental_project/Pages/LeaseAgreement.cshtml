@@ -1,0 +1,31 @@
+@page "/lease-agreement"
+@model rental_project.Pages.auth.LeaseAgreement
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create a Lease</title>
+    <link rel="stylesheet" href="~/css/LeaseAgreement.css"/>
+    <title>Lease Creation</title>
+    <!-- Include jsPDF library for generating pdfs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <h1>Lease Agreement</h1>
+    <div class="input-menu"> 
+        <main>
+            <input type="text" name="adress" placeholder="Property Adress" id="adress" required>
+            <input type="text" name="rent" placeholder="Rent Amount" id="rent" required>
+            <button class="add-button" id="add-button"><span class="left">Add Tenant</span><span>+</span></button>
+            <div id="add-tenant-area"></div> 
+            <button id="pdf-button">Save</button>
+        </main>
+    </div>
+
+    <script src="~/js/LeaseAgreement.js" type="module"></script>
+</body>
+
+</html>

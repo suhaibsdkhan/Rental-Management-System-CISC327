@@ -1,0 +1,111 @@
+/* Custom styles for the login page */
+
+/* Container styles */
+.container {
+    margin-top: 50px;
+}
+
+/* Card styles */
+.card {
+    border-radius: 30px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.ios-style-card {
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+/* Renty heading */
+.renty {
+    font-family: 'Instrument Sans', sans-serif;
+    font-size: 50px;
+    color: black;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Pill background for the sign-up section */
+.pill-background {
+    background-color: #f8f9fa;
+    border-radius: 50px;
+    padding: 20px;
+}
+
+/* Translucent input fields */
+.translucent-pill {
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 30px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Login and Sign-Up buttons */
+.btn-primary, .btn-outline-primary {
+    border-radius: 30px;
+}
+
+/* Modal styles */
+.modal-title {
+    margin: 0 auto;
+}
+
+/* Error message styles */
+.text-danger {
+    color: #dc3545 !important;
+}
+
+.text-success {
+    color: #28a745 !important;
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 767.98px) {
+    .renty {
+        font-size: 40px;
+    }
+
+    .pill-background {
+        margin-top: 20px;
+    }
+}
+
+/* Optional: Style for the social login icons */
+.card-body .text-center img {
+    margin: 0 10px;
+}
+
+/* Style adjustments for the modal close button */
+.modal-header .close {
+    outline: none;
+}
+
+/* Style for form labels */
+.form-group label {
+    font-weight: bold;
+}
+
+/* Style for error messages */
+#login-error, #signup-error {
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+/* Style for the sign-up modal inputs */
+#signup-form .form-control {
+    border-radius: 5px;
+}
+
+/* Style for the sign-up button inside the modal */
+#signup-button {
+    border-radius: 30px;
+}
+
+/* Hover effects for buttons */
+.btn-primary:hover, .btn-outline-primary:hover {
+    opacity: 0.9;
+}
